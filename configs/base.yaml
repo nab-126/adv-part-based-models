@@ -1,0 +1,17 @@
+VERSION: 2
+INPUT:
+  MIN_SIZE_TRAIN: [256,]
+  MIN_SIZE_TRAIN_SAMPLING: "choice"
+  MIN_SIZE_TEST: 256
+  MAX_SIZE_TRAIN: 1024  # Resize short edge to 256 and don't care about long one
+  MAX_SIZE_TEST: 1024
+  CROP:
+    ENABLED: True
+    TYPE: "absolute"
+    SIZE: [224, 224]
+    SINGLE_CATEGORY_MAX_AREA: 1.0
+  COLOR_AUG_SSD: False
+  SIZE_DIVISIBILITY: -1
+  FORMAT: "RGB"
+  # DATASET_MAPPER_NAME: "mask_former_semantic"  # Replace by our custom dataset mapper
+  # COLOR_AUG_SSD: True  # We set color jitter aug through args
