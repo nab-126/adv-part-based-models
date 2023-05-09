@@ -1,0 +1,6 @@
+[submodule "Mask2Former"]
+	path = Mask2Former
+	url = https://github.com/chawins/Mask2Former
+[submodule "MaskDINO"]
+	path = MaskDINO
+	url = https://github.com/chawins/MaskDINO.git
